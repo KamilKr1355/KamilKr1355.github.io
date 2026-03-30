@@ -2,37 +2,48 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>KK-MINA Projekt</title>
+    <title>Kamil K - GitHub Pages</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: Arial, sans-serif;
             background: #0f172a;
             color: #e2e8f0;
         }
 
         header {
             background: #1e293b;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
             color: #38bdf8;
         }
 
+        header p {
+            margin-top: 10px;
+            color: #94a3b8;
+        }
+
         .container {
             padding: 30px;
+            max-width: 900px;
+            margin: auto;
         }
 
         .card {
             background: #1e293b;
             padding: 20px;
-            margin-bottom: 20px;
             border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #38bdf8;
         }
 
         a {
@@ -40,16 +51,28 @@
             text-decoration: none;
         }
 
-        button {
-            background: #38bdf8;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 6px;
-            cursor: pointer;
+        a:hover {
+            text-decoration: underline;
         }
 
-        button:hover {
+        .projects a {
+            display: block;
+            padding: 10px;
             background: #0ea5e9;
+            margin: 10px 0;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+        }
+
+        .projects a:hover {
+            background: #0284c7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
         }
     </style>
 </head>
@@ -57,44 +80,49 @@
 <body>
 
 <header>
-    <h1>Projekt KK-MINA</h1>
-    <p>Dokumentacja i integracje</p>
+    <h1>👨‍💻 Kamil K</h1>
+    <p>GitHub Pages | Projekty | Dokumentacja</p>
 </header>
 
 <div class="container">
 
     <div class="card">
-        <h2>O projekcie</h2>
-        <p>Projekt integruje GitHub, Jira Cloud oraz Microsoft Teams.</p>
+        <h2>📌 O mnie</h2>
+        <p>
+            Student / Developer. Projekt pokazuje integrację GitHub, Jira Cloud oraz Microsoft Teams.
+        </p>
     </div>
 
     <div class="card">
-        <h2>Funkcje</h2>
-        <ul>
-            <li>Powiadomienia o Pull Requestach</li>
-            <li>Integracja z Jira</li>
-            <li>Zarządzanie kodem</li>
-        </ul>
+        <h2>Projekty</h2>
+        <div class="projects">
+            <a href="https://github.com/KamilKr1355/Law-Elearning">Law-Elearning - DRF Project</a>
+            <a href="https://github.com/KamilKr1355/e-commerce-app">Ecommerce app</a>
+        </div>
     </div>
 
     <div class="card">
         <h2>Linki</h2>
         <p>
-            Repozytorium: 
-            <a href="https://github.com/KK-MINA-2026/KK-MINA-REPO-LAB2">GitHub</a>
+            <a href="https://github.com/kamilkr1355">Mój GitHub</a>
+	    <a href="https://www.linkedin.com/in/kamil-krawiec-b4723a3b7/"> Linkedin</a>
         </p>
     </div>
 
     <div class="card">
         <h2>Test</h2>
-        <button onclick="showAlert()">Kliknij mnie</button>
+        <button onclick="test()">Kliknij</button>
     </div>
 
 </div>
 
+<footer>
+    © 2026 Kamil K
+</footer>
+
 <script>
-function showAlert() {
-    alert("Działa GitHub Pages");
+function test() {
+    alert("Email: KamilKrawiec1355@interia.pl");
 }
 </script>
 
